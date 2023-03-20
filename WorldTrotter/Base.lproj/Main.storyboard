@@ -49,16 +49,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="flC-X1-Fc7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="3uh-AR-eJP"/>
-                            <constraint firstItem="KDv-51-z5b" firstAttribute="top" secondItem="Ind-Ig-mDs" secondAttribute="bottom" constant="8" id="CgF-6c-YAR"/>
-                            <constraint firstItem="aZb-ny-YWd" firstAttribute="centerX" secondItem="flC-X1-Fc7" secondAttribute="centerX" id="EUP-g3-z0S"/>
-                            <constraint firstItem="mIC-Oi-GIT" firstAttribute="centerX" secondItem="flC-X1-Fc7" secondAttribute="centerX" id="KAp-rg-GS9"/>
-                            <constraint firstItem="aZb-ny-YWd" firstAttribute="top" secondItem="flC-X1-Fc7" secondAttribute="bottom" constant="8" id="W2Z-gn-EBU"/>
-                            <constraint firstItem="Ind-Ig-mDs" firstAttribute="top" secondItem="mIC-Oi-GIT" secondAttribute="bottom" constant="8" id="W2n-gS-hsR"/>
-                            <constraint firstItem="KDv-51-z5b" firstAttribute="centerX" secondItem="flC-X1-Fc7" secondAttribute="centerX" id="ZWF-M8-1qe"/>
-                            <constraint firstItem="mIC-Oi-GIT" firstAttribute="top" secondItem="aZb-ny-YWd" secondAttribute="bottom" constant="8" id="ec6-GV-5mI"/>
-                            <constraint firstItem="Ind-Ig-mDs" firstAttribute="centerX" secondItem="flC-X1-Fc7" secondAttribute="centerX" id="jaW-59-i4u"/>
-                            <constraint firstItem="flC-X1-Fc7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zkB-Qm-2VI"/>
+                            <constraint firstItem="flC-X1-Fc7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="4BF-yk-cpz"/>
+                            <constraint firstItem="KDv-51-z5b" firstAttribute="top" secondItem="Ind-Ig-mDs" secondAttribute="bottom" constant="8" id="7e4-m5-SQk"/>
+                            <constraint firstItem="mIC-Oi-GIT" firstAttribute="centerX" secondItem="flC-X1-Fc7" secondAttribute="centerX" id="G2a-M4-WRw"/>
+                            <constraint firstItem="aZb-ny-YWd" firstAttribute="top" secondItem="flC-X1-Fc7" secondAttribute="bottom" constant="8" id="Gqc-0t-usw"/>
+                            <constraint firstItem="mIC-Oi-GIT" firstAttribute="top" secondItem="aZb-ny-YWd" secondAttribute="bottom" constant="8" id="YTE-hU-h5A"/>
+                            <constraint firstItem="aZb-ny-YWd" firstAttribute="centerX" secondItem="flC-X1-Fc7" secondAttribute="centerX" id="hyI-53-BsN"/>
+                            <constraint firstItem="flC-X1-Fc7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jYq-EK-aGF"/>
+                            <constraint firstItem="Ind-Ig-mDs" firstAttribute="centerX" secondItem="flC-X1-Fc7" secondAttribute="centerX" id="mB3-5q-qSa"/>
+                            <constraint firstItem="Ind-Ig-mDs" firstAttribute="top" secondItem="mIC-Oi-GIT" secondAttribute="bottom" constant="8" id="tmk-0D-zbJ"/>
+                            <constraint firstItem="KDv-51-z5b" firstAttribute="centerX" secondItem="flC-X1-Fc7" secondAttribute="centerX" id="wUc-zQ-s3J"/>
                         </constraints>
                     </view>
                 </viewController>
