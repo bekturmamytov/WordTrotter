@@ -8,9 +8,10 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     var mapView: MKMapView!
+    var locationManager = CLLocationManager()
     
     override func loadView() {
         mapView = MKMapView()
@@ -61,7 +62,31 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("MapViewController loaded")
+        mapView.delegate = self
+        
+        let locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        //Check for location services
+        DispatchQueue.global().async {
+            if (CLLocationManager.locationServicesEnabled()) {
+                locationManager.requestAlwaysAuthorization()
+                locationManager.requestWhenInUseAuthorization()
+            }
+        }
+        
+        //Zoom to user location
+        if let userLocation = locationManager.location?.coordinate {
+            let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 500, longitudinalMeters: 500)
+            mapView.setRegion(viewRegion, animated: false)
+        }
+        
+        self.locationManager = locationManager
+        
+        DispatchQueue.main.async {
+            self.locationManager.startUpdatingLocation()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -71,11 +71,18 @@ extension ConversionViewController: UITextFieldDelegate {
         let exitingTextHasDecimalSeparator = textField.text?.range(of: ".")
         let replacementTextHasDecimalSeparator = textField.text?.range(of: ".")
         
+        let charactersNotAllowed = CharacterSet.letters
+        let replacementTextHasLetter = string.rangeOfCharacter(from: charactersNotAllowed)
+        
         if exitingTextHasDecimalSeparator != nil,
             replacementTextHasDecimalSeparator != nil {
             return false
-        } else {
-            return true
         }
+        
+        if replacementTextHasLetter != nil {
+            return false
+        }
+        
+        return true
     }
 }
